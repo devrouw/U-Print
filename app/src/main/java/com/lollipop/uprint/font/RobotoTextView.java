@@ -1,13 +1,15 @@
-package com.csform.android.uiapptemplate.font;
+package com.lollipop.uprint.font;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 
-import com.csform.android.uiapptemplate.R;
+import androidx.appcompat.widget.AppCompatTextView;
 
-public class RobotoTextView extends android.support.v7.widget.AppCompatTextView {
+import com.lollipop.uprint.R;
+
+public class RobotoTextView extends AppCompatTextView {
 
 	public RobotoTextView(Context context) {
 		super(context);
