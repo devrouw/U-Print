@@ -43,7 +43,7 @@
             android:paddingTop="12dp" >
 
             <com.lollipop.uprint.font.RobotoTextView
-                android:id="@+id/list_item_sticky_header_media_album_name"
+                android:id="@+id/txtFilename"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
@@ -53,7 +53,7 @@
                 app:typeface="robotoLight" />
 
             <com.lollipop.uprint.font.RobotoTextView
-                android:id="@+id/list_item_sticky_header_media_artist_name"
+                android:id="@+id/txtStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ArtistName"
@@ -62,7 +62,7 @@
                 app:typeface="robotoMedium" />
 
             <com.lollipop.uprint.font.RobotoTextView
-                android:id="@+id/list_item_sticky_header_media_time"
+                android:id="@+id/txtDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
