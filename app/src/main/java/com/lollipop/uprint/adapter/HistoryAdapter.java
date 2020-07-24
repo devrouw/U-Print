@@ -45,6 +45,11 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.MyViewHo
         holder.txtFilename.setText(dataList.get(position).getFilename());
         holder.txtStatus.setText(dataList.get(position).getStatus());
         holder.txtDate.setText(dataList.get(position).getDate());
+
+        String total = dataList.get(position).getTotal();
+//        int ttl = Integer.parseInt(total);
+
+        holder.txtTotal.setText("Rp "+total);
     }
 
     @Override
@@ -54,13 +59,14 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.MyViewHo
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        TextView txtFilename,txtDate,txtStatus;
+        TextView txtFilename,txtDate,txtStatus,txtTotal;
 
         MyViewHolder(View itemView) {
             super(itemView);
             txtFilename = itemView.findViewById(R.id.txtFilename);
             txtDate = itemView.findViewById(R.id.txtDate);
             txtStatus = itemView.findViewById(R.id.txtStatus);
+            txtTotal = itemView.findViewById(R.id.txtTotal);
         }
     }
 

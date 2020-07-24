@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">U Print</string>
     <string name="cd_main_image">main image</string>
+
+    <string-array name="ukuran_kertas">
+        <item>A4</item>
+        <item>A5</item>
+        <item>A6</item>
+        <item>US Letter</item>
+        <item>US Legal</item>
+    </string-array>
 </resources>

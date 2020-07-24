@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -28,7 +29,7 @@ import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private RobotoTextView btnLogin;
+    private Button btnLogin;
     private EditText edtUsername, edtPassword;
 
     BaseApiService mApiService;
@@ -46,7 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         session = new Config(getApplicationContext());
         mApiService = UtilsApi.getAPIService();
 
-        btnLogin = findViewById(R.id.btnLogin);
+        btnLogin = findViewById(R.id.btnSignin);
         edtUsername = findViewById(R.id.edtUsername);
         edtPassword = findViewById(R.id.edtPassword);
 
